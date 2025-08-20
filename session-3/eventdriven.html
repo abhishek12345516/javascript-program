@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <button onclick="addNumbers()">Addition</button>
+        <button onclick="greeting()">Greeting</button>
+        <button onclick="welcome()">Click Me</button>
+
+    <script>
+        function welcome(){
+            const name=prompt("Enter your name");
+            document.write("Welcome "+name);
+        }
+
+
+        function greeting(){
+            alert("Good Morning Abhishek Prajapati");
+        }
+
+          function addNumbers() {
+      let n1 = parseFloat(prompt("Pehla number daalo:"));
+      let n2 = parseFloat(prompt("Dusra number daalo:"));
+      
+      let sum = n1 + n2;
+     document.write("Dono numbers ka sum hai: " + sum)
+    }
+    </script>
+</body>
+</html>
