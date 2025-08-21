@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const parson ={
+            name:'Abhishek Prajapati',
+            email:'abhishekprajapati@gmail.com',
+            age:25,
+            city:'Kashipur'
+        }
+
+        console.log(parson);
+
+        console.log(parson.name);
+        console.log(parson.email);
+        console.log(parson.age);
+        console.log(parson.city);
+
+        document.write(`<h3>Name: ${parson.name}</h3>`);
+        document.write(`<h3>Email: ${parson.email}</h3>`);
+        document.write(`<h3>Age: ${parson.age}</h3>`);
+        document.write(`<h3>City: ${parson.city}</h3>`);
+
+
+        parson.name='Sushma Prajapati';
+        parson.email='sushmaprajapati@gmail.com';
+        parson.age=26;
+        parson.city='Kolkata';
+
+        document.write(`<h3>Name: ${parson.name}</h3>`);
+        document.write(`<h3>Email: ${parson.email}</h3>`);
+        document.write(`<h3>Age: ${parson.age}</h3>`);
+        document.write(`<h3>City: ${parson.city}</h3>`);
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const user ={
+            name:'Abhishek Prajapati',
+            email:'abhishek@gmail.com',
+            country:'India',
+            age:20,
+            education:{
+                school:'ABC School',
+                college:'Polytechnic College',
+                university:'Rudki Board University'
+            },
+            address:{
+                city:'Kashipur',
+                state:'Uttarakhand',
+                pincode:244713
+            },
+            department:{
+                name:'IT',
+                designation:'Software Developer',
+                salary:50000,
+                timing:'9:30AM to 6:30PM'
+            }
+        }
+
+        console.log(user)
+        console.log(user.education.university);
+        console.log(user.address.city);
+        console.log(user.department.salary);
+
+        const {education:{college,university},department:{salary,timing},address:{city}} = user;
+        console.log(college,salary,timing,city);
+    </script>
+</body>
+</html>

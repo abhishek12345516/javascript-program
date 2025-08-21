@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="evenOdd()">Click</button>
+    <script>
+        function evenOdd(){
+            let num1 = Number(prompt("Enter your Number"));
+            let num2 = Number(prompt("Enter your Number"));
+            let result = num1+num2;
+
+            if(result%2 == 0){
+                alert(`Addtion of ${num1} and ${num2} is even number `);
+            }else{
+                alert(`Addition of ${num1} and ${num2} is Odd number`);
+            }
+        }
+    </script>
+</body>
+</html>
