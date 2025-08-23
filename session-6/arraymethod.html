@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const array=[];
+
+        array.push(10);
+        array.push(20);
+        console.log(array);
+
+        array.unshift(30);
+        array.unshift(40);
+        console.log(array);
+        // remove element from the last index
+        console.log('Remove '+array.pop());
+        console.log(array);
+        // remove element from the first index
+        console.log('Remove '+array.shift());
+        console.log(array);
+
+
+        array.splice(1,0,40,50,60);
+        //parameter 1: from which index to start for insertion
+        //parameter 2: howmany elements you want to delete
+        //parametre 3: 1,2,3....: number which you want to inject
+        console.log(array);
+
+        array.splice(1,2,90);
+        console.log(array);
+
+        array.slice(2,1);
+        console.log(array);
+        array.splice(0,1);
+        console.log(array)
+
+
+        const newArray =[1,2,3,4,5,6,7,8,9,10].slice(3,8);
+        console.log(newArray);
+    </script>
+</body>
+</html>

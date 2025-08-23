@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const array =[1,2,3,4,5,6,7,8,9,10]
+
+        // const found = array.find(function(value){
+        //     return value==6;
+        // })
+
+        // console.log(found);
+
+        //real time proccess check find value for array with function
+        function search(array,num){
+            const found = array.find(function(value){
+             return value==num;
+         })
+         if(found!=undefined){
+            console.log(`Element is  Found value: ${found}`);
+         }else{
+            console.log(`Element is Not Found value`);
+         }
+        }
+
+        search([10,20,30,40,50,60], 60);
+        search(['apple','ball','banana','cat','Dog','elephant'], 'banana');
+
+        // find the index value array with function
+         function searchIndex(array,num){
+            const found = array.findIndex(function(value){
+             return value==num;
+         })
+         if(found>=0 ){
+            console.log(`Element is found value: ${found}`);
+         }else{
+            console.log(`Element is  Not Found value`);
+         }
+        }
+
+        searchIndex([10,20,30,40,50,60], 80);
+        searchIndex(['apple','ball','banana','cat','Dog','elephant'], 'banana');
+    </script>
+</body>
+</html>

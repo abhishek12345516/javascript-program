@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const array =[35,78,67,89,90,45,12,67,78,90];
+
+        console.log(
+            array.every(function(value){
+                return value >= 35;
+            })
+        );
+
+
+
+        console.log(
+            array.some(function(value){
+                return value >= 90;
+            })
+        );
+    </script>
+</body>
+</html>

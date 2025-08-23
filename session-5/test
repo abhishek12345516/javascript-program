@@ -1,4 +1,4 @@
-1. Create an object which represent a book with properties title, author, pages, and write a function that takes a 
+1.  Create an object which represent a book with properties title, author, pages, and write a function that takes a 
 book object as parameter and print the book information in browser.
 
 2. Create an object represent weather object with properties temperature,condition and location 
