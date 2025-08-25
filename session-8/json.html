@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const student = {
+            id:1,
+            name:'Abhishek',
+            email:'abhishek@gmail.com',
+            address:{
+                city:'Kashipur',
+                state:'Uttarakhand',
+                pincode:244713
+            },
+            phone:['1234567890','0987654321']
+        }
+
+        console.log(student);
+      console.log(student.name,student.email,student.address.city,student.address.state,student.phone);
+      const studentJson = JSON.stringify(student);
+      console.log(studentJson);
+    </script>
+</body>
+</html>

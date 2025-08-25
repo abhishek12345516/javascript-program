@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <h1 id="test"></h1>
+    <h1 class="myclass"></h1>
+    <h2></h2>
+    <h2></h2>
+    <h2></h2>
+    <script>
+        document.querySelector('h1').innerHTML="Skill Acadmey";
+        document.querySelector('#test').innerHTML="my Skill Acadmey";
+        document.querySelector('.myclass').innerHTML='learn dom mainuplation in javascript';
+        const elements=document.querySelectorAll('h2');
+        for(let ele of elements){
+            ele.innerHTML='Another h2 tags';
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="num"></h1>
+    <script>
+        setTimeout(function(){
+            console.log("this is my delay function");
+        },2000)
+        let count = 0;
+       const number= setInterval(()=>{
+            count++;
+            document.getElementById("num").innerHTML = count;
+            if(count>20){
+                clearInterval(number);
+            }
+        },1000)
+    </script>
+</body>
+</html>

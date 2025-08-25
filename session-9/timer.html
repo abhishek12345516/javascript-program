@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Timer</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 600px;
+            background-color: rgb(212, 195, 207);
+        }
+        #timer {
+            font-size: 60px;
+            margin-bottom: 30px;
+            background-color: black;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+        }
+        .buttons button {
+            color: white;
+            background-color: black;
+            box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+            border: none;
+            padding: 15px 25px;
+            border-radius: 10px;
+            font-size: 24px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="timer">00:00</div>
+        <div class="buttons">
+            <button onclick="start()">Start</button>
+            <button onclick="pause()">Pause</button>
+            <button onclick="resume()">Resume</button>
+            <button onclick="reset()">Reset</button>
+        </div>
+    </div>
+
+    <script>
+        let interval = null;
+        let count = 0;
+
+        const timerDisplay = document.getElementById('timer');
+
+        function updateDisplay() {
+            if (count < 60) {
+                timerDisplay.textContent = (count < 10) ? `00:0${count}` : `00:${count}`;
+            } else {
+                let min = Math.floor(count / 60);
+                let sec = count % 60;
+                timerDisplay.textContent = (sec < 10) ? `0${min}:0${sec}` : `0${min}:${sec}`;
+            }
+        }
+
+        function start() {
+            if (interval === null) {
+                interval = setInterval(function () {
+                    count++;
+                    updateDisplay();
+                }, 1000);
+            }
+        }
+
+        function pause() {
+            clearInterval(interval);
+            interval = null;
+        }
+
+        function resume() {
+            if (interval === null) {
+                start();
+            }
+        }
+
+        function reset() {
+            clearInterval(interval);
+            interval = null;
+            count = 0;
+            updateDisplay();
+        }
+    </script>
+</body>
+</html>
