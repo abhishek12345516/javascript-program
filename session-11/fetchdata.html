@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <h3 id="price"></h3>
+    <p id="description"></p>
+    <img id="image" src="" alt="">
+    <script>
+        async function fetchData(){
+            try {
+               const resp = await fetch('https://fakestoreapi.com/products');
+               const json = await resp.json();
+               console.log(json); 
+               document.getElementById('title').innerHTML = json[0].title;
+               document.getElementById('price').innerHTML = json[0].price;
+               document.getElementById('description').innerHTML = json[0].description;
+               document.getElementById('image').setAttribute('src',json[0].url)
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
+        fetchData();
+    </script>
+</body>
+</html>

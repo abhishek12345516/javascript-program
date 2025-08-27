@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #008080;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #008080, #00b894);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* Services Section */
+        .services {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .services h2 {
+            font-size: 32px;
+            color: #008080;
+            margin-bottom: 20px;
+        }
+
+        .service-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 80px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #008080;
+        }
+
+        .card p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        /* Call to Action */
+        .cta {
+            background: #008080;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 50px;
+        }
+
+        .cta h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .cta button {
+            background: white;
+            color: #008080;
+            border: none;
+            padding: 12px 25px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cta button:hover {
+            background: #f1f1f1;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #008080;
+            color: white;
+            margin-top: 30px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .service-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Abhishek Prajapati</h1>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="form.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Our Services</h2>
+        <p>We offer a wide range of services to help your business grow and succeed.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>What We Offer</h2>
+        <div class="service-cards">
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Web Design">
+                <h3>Web Design</h3>
+                <p>Creative and responsive web design to enhance user experience.</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135673.png" alt="SEO">
+                <h3>SEO Optimization</h3>
+                <p>Boost your website's visibility and rank higher on search engines.</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135788.png" alt="Digital Marketing">
+                <h3>Digital Marketing</h3>
+                <p>Comprehensive strategies to promote your brand online.</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135800.png" alt="App Development">
+                <h3>App Development</h3>
+                <p>Custom mobile app development for Android and iOS platforms.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <h3>Ready to Work With Us?</h3>
+        <button onclick="alert('Thank you! We will contact you soon.')">Contact Us</button>
+    </section>
+
+    <footer>
+        &copy; 2025 My Website | All Rights Reserved
+    </footer>
+</body>
+</html>

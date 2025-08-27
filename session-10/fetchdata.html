@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <h3 id="category"></h3>
+    <p id="description"></p>
+    <h5 id="price"></h5>
+    <img id="image" src="" alt="">
+    <script>
+        const response = fetch('https://dummyjson.com/products')
+
+        response.then(function(resp){
+            return resp.json();
+        }).then(function(data){
+            console.log(data);
+           document.getElementById('title').innerHTML = data.products[0].title;
+           document.getElementById('category').innerHTML = data.products[0].category;
+           document.getElementById('description').innerHTML = data.products[0].description;
+           document.getElementById('price').innerHTML = data.products[0].price;
+           document.getElementById('image').src = data.products[0].images[0];
+        }).catch(function(err){
+            console.log(err);
+        })
+    </script>
+</body>
+</html>
