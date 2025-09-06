@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        
+
+        const obj = {
+            id : 101,
+            fname : 'Abhishek',
+            lname : 'Prajapati',
+            name:'Abhishek Prajapati',
+            age : 25,
+            email:'abhishek.prajapati@outlook.com',
+            address : {
+                city : 'Jaipur',
+                state : 'Rajasthan',
+                pincode : 302017
+            },
+            salary : function(){
+                return 100000;
+            },
+
+            fullname : function(){
+                    return this.fname + " " + this.lname;
+            }
+        }
+
+     
+
+        console.log(obj);
+        document.write(obj.name + "<br>");
+        document.write(obj.age + "<br>");
+        document.write(obj.email + "<br>");
+        document.write(obj.address.city + "<br>");
+        document.write(obj.address.state + "<br>");
+        document.write(obj.address.pincode + "<br>");
+
+        document.write(obj.salary() + "<br>");
+        document.write(obj.fullname() + "<br>");
+    </script>
+</body>
+</html>

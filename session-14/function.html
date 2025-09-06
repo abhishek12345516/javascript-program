@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greet(name){
+            document.write("Hello, " + name + "!");
+        }
+        greet("Alice");
+        document.write("<br>");
+        greet("Bob");
+        document.write("<br>");
+        greet("Charlie");
+        document.write("<br>");
+
+
+        function add(a, b){
+            document.write("Sum: " + (a + b));
+        }
+        add(5, 10);
+
+
+        function welcomeMessage(){
+            return "Welcome to the JavaScript functions tutorial!";
+        }
+
+        document.write("<br>" + welcomeMessage());
+
+
+
+
+        function myName(fname="Abhishek",lname="Kumar"){
+            var a = fname + " " + lname;
+            return a;
+        }
+
+        var usename = myName( );
+        document.write("<br>" + usename);
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+   <form action="">
+    <label for="">name:</label>
+    <input type="text" id="fname" onfocus="focusFunction(this)" onblur="blurFunction(this)" oninput="inputFunction(this)">
+    <br><br>
+
+    <label for="">Roll No.</label>
+    <input type="text" id="rollno" onfocus="focusFunction(this)"  onblur="blurFunction(this)" oninput="inputFunction(this)">
+    <br><br>
+   </form>
+ 
+</div>
+<label for="">Gender:</label>
+<select name="" id="" onchange="changeFunction(this)">
+    <option value="india">india</option>
+    <option value="Pakistan">Pakistan</option>
+    <option value="canada">canada</option>
+    <option value="Rashia">Rashia</option>
+</select>
+
+<div id="inputOutput" style="border:1px solid green; margin: 10px; width: 300px;"></div>
+
+
+<script>
+    // function focusFunction(element){
+    //     element.style.backgroundColor = "green";
+    // }
+
+    // function blurFunction(element){
+    //     element.style.backgroundColor = "white";
+    // }
+
+    // function inputFunction(elelment){
+    //     var elelment = document.getElementById("fname").value;
+    //     document.getElementById("inputOutput").innerHTML = elelment;
+    // }
+
+    function changeFunction(element){
+        var store = element.value;
+        document.getElementById("inputOutput").innerHTML = store;
+    }
+
+</script>
+</body>
+</html>

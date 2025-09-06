@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let marks = prompt("Enter your marks:");
+
+        if(marks >= 90 && marks <= 100){
+            document.write("You got A+ grade");
+        }else if(marks >= 80 && marks < 90){
+            document.write("You got A grade");
+        }else if(marks >= 70 && marks < 80){
+            document.write("You got B grade");
+        }else if(marks >= 60 && marks < 70){
+            document.write("You got C grade");
+        }else if(marks >= 50 && marks < 60){
+            document.write("You got D grade");
+        }else if(marks >= 40 && marks < 50){
+            document.write("You got E grade");
+        }else if(marks >= 0 && marks < 40){
+            document.write("You got F grade");
+        }else{
+            alert("Invalid marks");
+        }
+
+    </script>
+</body>
+</html>

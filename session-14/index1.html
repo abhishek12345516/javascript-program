@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Layout</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <section class="main-section">
+        <!-- Header + Navbar -->
+        <header class="header-nav">
+            <h1>Full Stack Development services</h1>
+            <button class="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+            <nav class="nav_wrapper">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <div class="content-area">
+            <article class="main-content">
+                <img src="images/types-of-web-development.webp" alt="Sample Website Image">
+                <h2>Welcome to Our Website</h2>
+                <p>
+                    This is a simple paragraph about the website.
+                    It describes the purpose and the features of this simple webpage layout.
+                    We are using HTML and CSS with flex and grid to make it responsive and structured.
+                </p>
+                <!-- Chart Section -->
+                <div class="chart-container">
+                    <h3>Website Statistics</h3>
+                    <canvas id="myChart"></canvas>
+                </div>
+            </article>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <h3>Sidebar Menu</h3>
+                <ul>
+                    <li><a href="#">Latest News</a></li>
+                    <li><a href="#">Popular Posts</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Tags</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <!-- Chat Widget -->
+        <div class="chat-widget" aria-live="polite">
+            <div class="chat-header">
+                <h3>Live Chat</h3>
+                <button class="close-chat" aria-label="Close Chat">&times;</button>
+            </div>
+            <div class="chat-body">
+                <div class="messages">
+                    <div class="bot-message">Hello! How can I help you?</div>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="userInput" placeholder="Type a message..." aria-label="Type your message">
+                <button id="sendBtn">Send</button>
+            </div>
+        </div>
+
+        <!-- Chat Icon -->
+        <button class="chat-icon" aria-label="Open Chat">💬</button>
+    </section>
+    <!-- Cards Section -->
+    <section class="cards-section">
+        <h2>Our Services</h2>
+        <div class="cards-container">
+            <div class="card">
+                <img src="images/types-of-web-development.webp" alt="Service 1">
+                <h3>Web Development</h3>
+                <p>We create responsive and dynamic websites with modern technologies.</p>
+                <a href="#" class="card-btn">Learn More</a>
+            </div>
+            <div class="card">
+                <img src="images/images.jpeg" alt="Service 2">
+                <h3>App Development</h3>
+                <p>Build mobile applications for Android and iOS with best performance.</p>
+                <a href="#" class="card-btn">Learn More</a>
+            </div>
+            <div class="card">
+                <img src="images/seo-soft-skills.webp" alt="Service 3">
+                <h3>SEO Optimization</h3>
+                <p>Boost your website ranking and reach more customers with our SEO services.</p>
+                <a href="#" class="card-btn">Learn More</a>
+            </div>
+            <div class="card">
+                <img src="images/digital-marketing-definition-new.png" alt="Service 4">
+                <h3>Digital Marketing</h3>
+                <p>Promote your business with our expert digital marketing strategies.</p>
+                <a href="#" class="card-btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>We are a simple website providing tutorials, blogs, and useful content for developers and learners.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+                <p>Phone: <a href="tel:+919876543210">+91 9876543210</a></p>
+                <p>Location: New Delhi, India</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Simple Website. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>

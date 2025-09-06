@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const obj = [
+            {fname : 'Abhishek', lname : 'Kumar', age : 21},
+            {fname : 'Aman', lname : 'Kumar', age : 22},
+            {fname : 'Amit', lname : 'Kumar', age : 23},
+            {fname : 'Ankit', lname : 'Kumar', age : 24},
+        ]
+
+        let y  = obj.map((item) => {
+            return item.fname + " " + item.lname + " " + item.age  
+        })
+
+        console.log(y);
+        document.write(y);
+    </script>
+</body>
+</html>
